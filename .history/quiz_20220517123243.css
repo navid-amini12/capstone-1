@@ -1,0 +1,75 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+  --color-light: rgb(176, 112, 112);
+  --color-dark: #d1b2b2;
+  --color-signal: #d43e3e;
+  
+  --color-background: var(--color-light);
+  --color-text: var(--color-dark);
+  --color-accent: var(--color-signal);
+  
+  --size-bezel: .5rem;
+  --size-radius: 4px;
+  
+  
+  
+ 
+}
+
+
+
+
+
+.card {
+  background: var(--color-background);
+  padding: calc(4 * var(--size-bezel));
+  margin-top: calc(4 * var(--size-bezel));
+  border-radius: var(--size-radius);
+  border: 3px solid var(--color-shadow, currentColor);
+  box-shadow: .5rem .5rem 0 var(--color-shadow, currentColor);
+  
+  
+  
+
+}
+
+
+.l-design-widht {
+  max-width: 40rem;
+  padding: 2rem;
+}
+
+.input {
+  position: relative;
+  
+  
+
+    
+   
+
+    
+  
+}
+
+
+.button-group {
+  margin-top: 30px
+}
+button {
+  color: currentColor;
+  padding: var(--size-bezel) calc(var(--size-bezel) * 2);
+  background: var(--color-accent);
+  border: none;
+  border-radius: var(--size-radius);
+  font-weight: 900;
+}
+
+
+.icon {
+  display: inline-block;
+  height: 0em;
+  margin-right: .5em;
+}
+
+

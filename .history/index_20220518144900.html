@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+
+<button id="button">GET Friends List</button>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  document.getElementById("button").onclick = function () {
+	axios
+	  .get("http://localhost:4000/api/users")
+	  .then(function (response) {
+		const data = response.data;
+		document.getElementById("people").innerHTML = data
+		  .map(function (person) {
+			return '<li class="row">' + person;
+		  })
+		  .join("");
+	  })
+	  .catch(function (err) {
+		document.getElementById("people").innerHTML =
+		  '<li class="text-danger">' + err.message + "</li>";
+	  });
+  };
+</script>
+	<button id="button">GET Friends List</button>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      document.getElementById("button").onclick = function () {
+        axios
+          .get("http://localhost:4000/api/users")
+          .then(function (response) {
+            const data = response.data;
+            document.getElementById("people").innerHTML = data
+              .map(function (person) {
+                return '<li class="row">' + person;
+              })
+              .join("");
+          })
+          .catch(function (err) {
+            document.getElementById("people").innerHTML =
+              '<li class="text-danger">' + err.message + "</li>";
+          });
+      };
+    </script>
+<body>
+	<h1>Hello and welcome to Navid's Website. Here You will find entertainment, education, sports and much more</h1>
+	
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+	
+		<h1>Please choose one of the options below </h1>
+
+		<nav>
+		
+		  <label for="touch"><span>Options</span></label>               
+		  <input type="checkbox" id="touch"> 
+		
+		  <ul class="slide">
+			<li><a href="wordgame.html">Calculate Average Lifespan</a></li> 
+			<li><a href="quiz.html">Quiz Game</a></li> 
+			<li><a href="#"> </a></li>
+			<li><a href="#"> </a></li>
+		  </ul>
+		
+		</nav> 

@@ -1,0 +1,44 @@
+
+<head>
+    <link rel="stylesheet" href="quiz.css">
+    </head>
+
+<article class="l-design-widht">
+    <h1>Here, you can generate random questions</h1>
+     
+    </div>
+    <form>
+        <label for="quantity">Please enter the number of Random Questions you want to generate </label>
+        <input type="number" id="quan" name="quan" min="0" max="20">
+      </form>
+  
+       
+       <div class="button-group">
+        <button id = button >Send</button>
+      </div>
+    <body class="container">
+     
+      <ul id="people" class=""></ul>
+  
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script>
+        document.getElementById("button").onclick = function () {
+          axios
+            .get("http://localhost:4000/api/quest")
+           // const input = document.getElementById('quantities');
+            .then(function (response) {
+              const data = response.data;
+              document.getElementById("people").innerHTML = data
+                .map(function (person) {
+                  return '<li class="row">' + person ;
+                })
+                .join("");
+            })
+            .catch(function (err) {
+              document.getElementById("people").innerHTML =
+                '<li class="text-danger">' + err.message + "</li>";
+            });
+        };
+      </script>
+
+    
