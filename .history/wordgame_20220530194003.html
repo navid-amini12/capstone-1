@@ -1,0 +1,304 @@
+
+
+  <link rel="stylesheet" type="text/css" href="Life.css">
+
+
+
+ 
+
+  
+ <div class = "container">
+  nav {
+    margin: 27px auto 0;
+  
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 100px;
+  }
+  a:nth-child(2) {
+    width: 110px;
+  }
+  a:nth-child(3) {
+    width: 100px;
+  }
+  a:nth-child(4) {
+    width: 160px;
+  }
+  a:nth-child(5) {
+    width: 120px;
+  }
+  nav .start-home, a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+  }
+  nav .start-about, a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #e74c3c;
+  }
+  nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+  }
+  nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+  }
+  nav .start-contact, a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+  }
+  
+  body {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #2c3e50;
+  }
+  h1 {
+    text-align: center;
+    margin: 40px 0 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+  }
+  
+  p {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #ecf0f1;
+      font-family: 'Cherry Swash',cursive;
+      font-size: 16px;
+  }
+  
+  span {
+      color: #2BD6B4;
+  }
+   <div class = "element">
+    <details class="dropdown">
+      <summary role="button">
+        <a class="button">Click for more!</a>
+      </summary>
+      <ul>
+        <li><a href="#">I'm a dropdown.</a></li>
+        <li><a href="#">In Pure CSS</a></li>
+        <li><a href="#">As in...</a></li>
+        <li><a href="#">No JavaScript.</a></li>
+        <li><a href="#">At All.</a></li>
+    </ul>
+  </details>
+  
+    <h1>Average lifespan determiner</h1>
+    
+
+    <form action="/action_page.php">
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      
+    </form>
+    
+  <label for="cars">How Often do you smoke ?</label>
+  
+  <select id="questions">
+  <option value="volvo">Always</option>
+  <option value="saab">Often</option>
+  <option value="opel">Sometimes</option>
+  <option value="audi">Rarely</option>
+  <option value="audi">Never</option>
+  </select>
+  
+  <label for="cars">How Often do you smoke ?</label>
+  
+  <select id="questions">
+  <option value="volvo">Always</option>
+  <option value="saab">Often</option>
+  <option value="opel">Sometimes</option>
+  <option value="audi">Rarely</option>
+  <option value="audi">Never</option>
+  </select>
+  
+  <h1>What is your highest level of eudcation</h1>
+  
+  <form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> High Shool</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> College</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Master's</label><br><br>
+  <input type="submit" value="Submit">
+  </form>
+  
+  <form>
+    <label for="quantity">How many minutes do you exercise per day ? </label>
+    <input type="number" id="quantity" name="quantity" min="0" max="1000">
+  </form>
+  
+  
+  
+  
+  <label for="cars">How Often do you smoke ?</label>
+  
+  <select id="myquestions">
+  <option value="always">Always</option>
+  <option value="often">Often</option>
+  <option value="sometimes">Sometimes</option>
+  <option value="rarely">Rarely</option>
+  <option value="never">Never</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <br>
+  <br>
+  <br>
+  <!-- <button id = "submitInfo">Submit The Info</button></div> -->
+
+
+  
+
+
+  <input id = "submitInfo" type="button" value = "Submit Info" onclick="alert('Submitting INfo');" />
+  </div>
+ 
+  <!-- <input id = "submitInfo" type="button" value = "Submit Info" onclick="alert('Submitting INfo');" /> --> 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <body class="container">
+    <ul id="people" class=""></ul>
+ 
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+
+      document.getElementById("submitInfo").onclick = function () {
+        axios
+          .get("http://localhost:4000/api/users")
+          .then(function (response) {
+            var e = document.getElementById("myquestions");
+            var strUser = e.options[e.selectedIndex].text;
+
+            var birthday = document.getElementById("birthday").value
+            
+      
+     if (strUser == "Never") {
+
+
+       alert( document.getElementById("people").innerHTML = response.data[0] + birthday)
+    
+    }
+          })
+
+
+          .catch(function (err) {
+            document.getElementById("people").innerHTML =
+              '<li class="text-danger">' + err.message + "</li>";
+          });
+      };
+    </script>
+    <script>var ALERT_TITLE = "Oops!";
+      var ALERT_BUTTON_TEXT = "Ok";
+      
+      if(document.getElementById) {
+        window.alert = function(txt) {
+          createCustomAlert(txt);
+        }
+      }
+      
+      function createCustomAlert(txt) {
+        d = document;
+      
+        if(d.getElementById("modalContainer")) return;
+      
+        mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+        mObj.id = "modalContainer";
+        mObj.style.height = d.documentElement.scrollHeight + "px";
+        
+        alertObj = mObj.appendChild(d.createElement("div"));
+        alertObj.id = "alertBox";
+        if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+        alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+        alertObj.style.visiblity="visible";
+      
+        h1 = alertObj.appendChild(d.createElement("h1"));
+        h1.appendChild(d.createTextNode(ALERT_TITLE));
+      
+        msg = alertObj.appendChild(d.createElement("p"));
+        //msg.appendChild(d.createTextNode(txt));
+        msg.innerHTML = txt;
+      
+        btn = alertObj.appendChild(d.createElement("a"));
+        btn.id = "closeBtn";
+        btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+        btn.href = "#";
+        btn.focus();
+        btn.onclick = function() { removeCustomAlert();return false; }
+      
+        alertObj.style.display = "block";
+        
+      }
+      
+      function removeCustomAlert() {
+        document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+      }
+      function ful(){
+      alert('Alert this pages');
+      }</script>
+  </body>
+</html>
+
+
+
